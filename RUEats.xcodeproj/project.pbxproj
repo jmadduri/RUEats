@@ -13,6 +13,7 @@
 		6561ED1427C95719006816AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6561ED1227C95719006816AF /* Main.storyboard */; };
 		6561ED1627C9571A006816AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6561ED1527C9571A006816AF /* Assets.xcassets */; };
 		6561ED1927C9571A006816AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6561ED1727C9571A006816AF /* LaunchScreen.storyboard */; };
+		BE3F5E2927CECBB3008AD788 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3F5E2827CECBB3008AD788 /* FoodCell.swift */; };
 		BEB1ABF427C95C4200F43DC0 /* testingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		6561ED1527C9571A006816AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6561ED1827C9571A006816AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6561ED1A27C9571A006816AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE3F5E2827CECBB3008AD788 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				6561ED0C27C95719006816AF /* AppDelegate.swift */,
 				6561ED0E27C95719006816AF /* SceneDelegate.swift */,
 				6561ED1027C95719006816AF /* ViewController.swift */,
+				BE3F5E2827CECBB3008AD788 /* FoodCell.swift */,
 				BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */,
 				6561ED1227C95719006816AF /* Main.storyboard */,
 				6561ED1527C9571A006816AF /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				BEB1ABF427C95C4200F43DC0 /* testingSwift.swift in Sources */,
 				6561ED1127C95719006816AF /* ViewController.swift in Sources */,
+				BE3F5E2927CECBB3008AD788 /* FoodCell.swift in Sources */,
 				6561ED0D27C95719006816AF /* AppDelegate.swift in Sources */,
 				6561ED0F27C95719006816AF /* SceneDelegate.swift in Sources */,
 			);
