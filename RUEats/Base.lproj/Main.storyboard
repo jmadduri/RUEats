@@ -1,24 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="FoodListViewController" id="BYZ-38-t0r" userLabel="View Controller" customClass="FoodViewController" customModule="RUEats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mh-VF-rOL">
+                                <rect key="frame" x="10" y="44" width="80" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Button"/>
+                            </button>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nM4-g5-CYf">
+                                <rect key="frame" x="0.0" y="105" width="359" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wgt-D7-KHR">
+                                <rect key="frame" x="0.0" y="156" width="414" height="706"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="foodCell" id="5IX-eW-y0z" customClass="foodCell" customModule="RUEats" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5IX-eW-y0z" id="eti-XQ-5wS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPI-x6-P7O">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="127"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaI-Rk-Wl5">
+                                                    <rect key="frame" x="0.0" y="129" width="41.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxn-hS-Azu">
+                                                    <rect key="frame" x="372" y="129" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oh-kl-ZZE">
+                                                    <rect key="frame" x="186" y="129" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="oxn-hS-Azu" secondAttribute="trailing" id="2qn-yW-reM"/>
+                                                <constraint firstItem="2oh-kl-ZZE" firstAttribute="centerX" secondItem="eti-XQ-5wS" secondAttribute="centerX" id="HNm-yW-UCb"/>
+                                                <constraint firstAttribute="bottom" secondItem="2oh-kl-ZZE" secondAttribute="bottom" id="Iwo-qu-a8M"/>
+                                                <constraint firstItem="2oh-kl-ZZE" firstAttribute="top" secondItem="ZPI-x6-P7O" secondAttribute="bottom" constant="2" id="LFq-IV-9t5"/>
+                                                <constraint firstItem="OaI-Rk-Wl5" firstAttribute="leading" secondItem="eti-XQ-5wS" secondAttribute="leading" id="NKQ-kD-cRJ"/>
+                                                <constraint firstItem="ZPI-x6-P7O" firstAttribute="top" secondItem="eti-XQ-5wS" secondAttribute="top" id="U1M-lH-Cpn"/>
+                                                <constraint firstAttribute="trailing" secondItem="ZPI-x6-P7O" secondAttribute="trailing" id="c5f-fI-zST"/>
+                                                <constraint firstAttribute="bottom" secondItem="OaI-Rk-Wl5" secondAttribute="bottom" id="dbq-zk-TFb"/>
+                                                <constraint firstItem="ZPI-x6-P7O" firstAttribute="leading" secondItem="eti-XQ-5wS" secondAttribute="leading" id="fQF-r0-GZz"/>
+                                                <constraint firstAttribute="bottom" secondItem="oxn-hS-Azu" secondAttribute="bottom" id="kNC-Em-SEi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="foodImage" destination="ZPI-x6-P7O" id="dff-Rd-NPD"/>
+                                            <outlet property="foodNameLabel" destination="2oh-kl-ZZE" id="FVa-HM-52u"/>
+                                            <outlet property="foodPriceLabel" destination="OaI-Rk-Wl5" id="5Tc-gA-61i"/>
+                                            <outlet property="foodRatingLabel" destination="oxn-hS-Azu" id="RP0-ml-83w"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6D-6i-PHb">
+                                <rect key="frame" x="359" y="116" width="45" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="line.3.horizontal.decrease.circle.fill" catalog="system"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wgt-D7-KHR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0mt-gp-asW"/>
+                            <constraint firstItem="wgt-D7-KHR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6vp-v1-mYe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S6D-6i-PHb" secondAttribute="trailing" constant="10" id="C1O-oW-ou6"/>
+                            <constraint firstItem="nM4-g5-CYf" firstAttribute="top" secondItem="0Mh-VF-rOL" secondAttribute="bottom" constant="30" id="CZP-Lb-Ula"/>
+                            <constraint firstItem="0Mh-VF-rOL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FCq-3t-Fqg"/>
+                            <constraint firstItem="nM4-g5-CYf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jqp-fb-oKI"/>
+                            <constraint firstItem="wgt-D7-KHR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MHl-jB-1Gy"/>
+                            <constraint firstItem="S6D-6i-PHb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="OKN-RJ-k9H"/>
+                            <constraint firstItem="0Mh-VF-rOL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="OQ6-Q7-fLZ"/>
+                            <constraint firstItem="wgt-D7-KHR" firstAttribute="top" secondItem="nM4-g5-CYf" secondAttribute="bottom" id="U3e-vE-7SI"/>
+                            <constraint firstItem="wgt-D7-KHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgj-mQ-dmf"/>
+                            <constraint firstItem="nM4-g5-CYf" firstAttribute="top" secondItem="0Mh-VF-rOL" secondAttribute="bottom" constant="30" id="eOX-uN-fzv"/>
+                            <constraint firstItem="S6D-6i-PHb" firstAttribute="leading" secondItem="nM4-g5-CYf" secondAttribute="trailing" id="kH3-FA-Srb"/>
+                            <constraint firstItem="wgt-D7-KHR" firstAttribute="top" secondItem="nM4-g5-CYf" secondAttribute="bottom" id="uaL-0v-RAZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foodListTableView" destination="wgt-D7-KHR" id="YNg-dv-4hv"/>
+                        <outlet property="foodSearchBar" destination="nM4-g5-CYf" id="mN3-kH-oTj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="line.3.horizontal.decrease.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
