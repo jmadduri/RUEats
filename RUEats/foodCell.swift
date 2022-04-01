@@ -2,7 +2,7 @@
 //  foodCell.swift
 //  RUEats
 //
-//  Created by Jithin Madduri on 3/11/22.
+//  Created by Aryan Patel on 4/1/22.
 //
 
 import UIKit
@@ -30,4 +30,5 @@ class foodCell: UITableViewCell {
         foodImage.image = food.image
         foodNameLabel.text = food.name
     }
+    
 }
