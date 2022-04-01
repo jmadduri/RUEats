@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  RUEats
 //
-//  Created by Jithin Madduri on 2/25/22.
+//  Created by William Wu on 2/25/22.
 //
 
 //aryan was here
@@ -56,7 +56,7 @@ extension ViewController: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FoodCell.identifier, for: indexPath) as! FoodCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: hottestFoodCell.identifier, for: indexPath) as! hottestFoodCell
         
         cell.setUpCell(food: food[indexPath.row])
         return cell
