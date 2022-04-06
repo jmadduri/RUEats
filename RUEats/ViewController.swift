@@ -14,10 +14,14 @@ struct foodDisplay{
     var label: String
 }
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var restaurantTableView: UITableView!
     // Size has to be non-automatic 
     @IBOutlet weak var foodCollectionView: UICollectionView!
+    
+    let dummyRestaurants = ["Chipotle", "Panera", "Moe's", "Wawa", "McDonalds"]
     
     let foodNames : [String] = ["Burgers", "Pizza", "Pasta", "Asian", "Takeout"]
     
@@ -25,7 +29,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        restaurantTableView.delegate = self
+        restaurantTableView.dataSource = self
         foodCollectionView.delegate = self
         foodCollectionView.dataSource = self
         
@@ -33,6 +38,24 @@ class ViewController: UIViewController {
             // adds the images to the empty food array
             food.append(foodDisplay(image: UIImage(named: "food\(i)")!, label: foodNames[i]))
         }
+    }
+}
+
+extension ViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("works!")
+    }
+}
+
+extension ViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dummyRestaurants.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = restaurantTableView.dequeueReusableCell(withIdentifier: "restaurantProtypeCell", for: indexPath)
+        cell.textLabel?.text = dummyRestaurants[indexPath.row]
+        
+        return cell
     }
 }
 
