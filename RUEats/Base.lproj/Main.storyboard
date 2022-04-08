@@ -115,6 +115,51 @@
             </objects>
             <point key="canvasLocation" x="338" y="135"/>
         </scene>
+        <!--Add Restaurant-->
+        <scene sceneID="gKB-3o-tQg">
+            <objects>
+                <viewController id="c7G-Rs-JPF" customClass="AddRestaurantViewController" customModule="RUEats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CIV-bu-WBz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVo-id-lKH">
+                                <rect key="frame" x="136" y="421" width="142" height="100"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Tap Me "/>
+                                <connections>
+                                    <segue destination="hpE-h5-CfX" kind="show" destinationCreationSelector="showDetails:" id="wYU-3w-CkU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OBx-UE-sCV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HVo-id-lKH" firstAttribute="centerX" secondItem="CIV-bu-WBz" secondAttribute="centerX" id="1rT-51-QYp"/>
+                            <constraint firstItem="HVo-id-lKH" firstAttribute="centerY" secondItem="CIV-bu-WBz" secondAttribute="centerY" id="e3U-ko-F4v"/>
+                            <constraint firstItem="HVo-id-lKH" firstAttribute="leading" secondItem="OBx-UE-sCV" secondAttribute="leading" constant="150" id="mII-Z0-CKx"/>
+                            <constraint firstItem="OBx-UE-sCV" firstAttribute="trailing" secondItem="HVo-id-lKH" secondAttribute="trailing" constant="150" id="u5s-ty-brC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Restaurant" id="4VH-xk-p2P"/>
+                    <connections>
+                        <outlet property="addRestaurantButton" destination="HVo-id-lKH" id="Dlc-Mf-QYO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrW-qa-c1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="-614"/>
+        </scene>
+        <!--New Restaurant-->
+        <scene sceneID="g7c-V1-zad">
+            <objects>
+                <hostingController id="hpE-h5-CfX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="New Restaurant" id="hzc-cd-eha"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8LC-Cy-nDU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1506" y="-614"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="6hw-dP-BaD">
             <objects>
@@ -182,6 +227,14 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obn-04-r9P">
+                                <rect key="frame" x="327" y="243" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Temp Button"/>
+                                <connections>
+                                    <segue destination="c7G-Rs-JPF" kind="show" id="1HH-xz-g3b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2cC-g0-vHq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -189,8 +242,12 @@
                             <constraint firstItem="2cC-g0-vHq" firstAttribute="trailing" secondItem="WGb-UQ-1iT" secondAttribute="trailing" id="0RT-Is-0dp"/>
                             <constraint firstItem="dkp-MH-ZOd" firstAttribute="leading" secondItem="2cC-g0-vHq" secondAttribute="leading" id="43a-bz-Lzo"/>
                             <constraint firstItem="WGb-UQ-1iT" firstAttribute="leading" secondItem="2cC-g0-vHq" secondAttribute="leading" id="9Xh-aU-uSt"/>
+                            <constraint firstItem="WGb-UQ-1iT" firstAttribute="top" secondItem="obn-04-r9P" secondAttribute="bottom" constant="8" symbolic="YES" id="BEc-Fi-GlP"/>
+                            <constraint firstItem="obn-04-r9P" firstAttribute="leading" secondItem="2cC-g0-vHq" secondAttribute="leading" constant="327" id="EHf-ag-mPh"/>
                             <constraint firstItem="2cC-g0-vHq" firstAttribute="trailing" secondItem="dkp-MH-ZOd" secondAttribute="trailing" id="Ndb-Az-aas"/>
+                            <constraint firstItem="2cC-g0-vHq" firstAttribute="trailing" secondItem="obn-04-r9P" secondAttribute="trailing" constant="20" id="ZqL-3k-kE6"/>
                             <constraint firstItem="WGb-UQ-1iT" firstAttribute="top" secondItem="dkp-MH-ZOd" secondAttribute="bottom" constant="60" id="b49-sr-6cP"/>
+                            <constraint firstItem="obn-04-r9P" firstAttribute="top" secondItem="dkp-MH-ZOd" secondAttribute="bottom" constant="21" id="n3N-0p-wnf"/>
                             <constraint firstItem="2cC-g0-vHq" firstAttribute="bottom" secondItem="dkp-MH-ZOd" secondAttribute="bottom" constant="640" id="rxa-u4-Sfv"/>
                             <constraint firstItem="dkp-MH-ZOd" firstAttribute="top" secondItem="2cC-g0-vHq" secondAttribute="top" id="vwr-7a-ney"/>
                             <constraint firstItem="2cC-g0-vHq" firstAttribute="bottom" secondItem="WGb-UQ-1iT" secondAttribute="bottom" id="zdN-p1-4q5"/>
@@ -205,7 +262,28 @@
             </objects>
             <point key="canvasLocation" x="-570" y="135"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HGf-yJ-8Z1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Ym-My-a1V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H2A-55-KpZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c7G-Rs-JPF" kind="relationship" relationship="rootViewController" id="7tS-EZ-CuW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stS-8f-hHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-357" y="-614"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7tS-EZ-CuW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="line.3.horizontal.decrease.circle.fill" catalog="system" width="128" height="121"/>

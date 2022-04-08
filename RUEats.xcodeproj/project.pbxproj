@@ -17,7 +17,10 @@
 		65CC6C6E27D1F5AD00DFC536 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC6C6D27D1F5AD00DFC536 /* Food.swift */; };
 		65FD272B27DB2387002A66AE /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD272A27DB2387002A66AE /* FoodViewController.swift */; };
 		71CB59F927F771FB00B866D4 /* foodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB59F827F771FB00B866D4 /* foodCell.swift */; };
+		BE2F94B427FE63E6006D708C /* AddRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F94B327FE63E6006D708C /* AddRestaurantViewController.swift */; };
+		BE2F94B627FE6C4C006D708C /* AddNewRestaurantUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F94B527FE6C4C006D708C /* AddNewRestaurantUI.swift */; };
 		BE4B220D27F76CEA00CAC4A2 /* hottestFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */; };
+		BE9AC3D127FFF9EB00E1EC2C /* mapUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9AC3D027FFF9EB00E1EC2C /* mapUI.swift */; };
 		BEB1ABF427C95C4200F43DC0 /* testingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +37,10 @@
 		65CC6C6D27D1F5AD00DFC536 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		65FD272A27DB2387002A66AE /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		71CB59F827F771FB00B866D4 /* foodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodCell.swift; sourceTree = "<group>"; };
+		BE2F94B327FE63E6006D708C /* AddRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewController.swift; sourceTree = "<group>"; };
+		BE2F94B527FE6C4C006D708C /* AddNewRestaurantUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRestaurantUI.swift; sourceTree = "<group>"; };
 		BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hottestFoodCell.swift; sourceTree = "<group>"; };
+		BE9AC3D027FFF9EB00E1EC2C /* mapUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapUI.swift; sourceTree = "<group>"; };
 		BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +83,9 @@
 				650038D327C9603500CA1547 /* Jithin.swift */,
 				BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */,
 				6561ED1227C95719006816AF /* Main.storyboard */,
+				BE9AC3D027FFF9EB00E1EC2C /* mapUI.swift */,
+				BE2F94B327FE63E6006D708C /* AddRestaurantViewController.swift */,
+				BE2F94B527FE6C4C006D708C /* AddNewRestaurantUI.swift */,
 				BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */,
 				6561ED1527C9571A006816AF /* Assets.xcassets */,
 				6561ED1727C9571A006816AF /* LaunchScreen.storyboard */,
@@ -163,7 +172,10 @@
 				6561ED1127C95719006816AF /* ViewController.swift in Sources */,
 				BE4B220D27F76CEA00CAC4A2 /* hottestFoodCell.swift in Sources */,
 				71CB59F927F771FB00B866D4 /* foodCell.swift in Sources */,
+				BE2F94B427FE63E6006D708C /* AddRestaurantViewController.swift in Sources */,
 				6561ED0D27C95719006816AF /* AppDelegate.swift in Sources */,
+				BE2F94B627FE6C4C006D708C /* AddNewRestaurantUI.swift in Sources */,
+				BE9AC3D127FFF9EB00E1EC2C /* mapUI.swift in Sources */,
 				6561ED0F27C95719006816AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +328,7 @@
 				DEVELOPMENT_TEAM = 53U8R9MVTQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RUEats/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "RUEats needs access to your location to add a new restaurant";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -344,6 +357,7 @@
 				DEVELOPMENT_TEAM = 53U8R9MVTQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RUEats/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "RUEats needs access to your location to add a new restaurant";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
