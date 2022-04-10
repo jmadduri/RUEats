@@ -21,6 +21,10 @@ class ViewController: UIViewController {
     // Size has to be non-automatic 
     @IBOutlet weak var foodCollectionView: UICollectionView!
     
+    @IBOutlet weak var testUIButton: UIButton!
+    
+    
+    
     let dummyRestaurants = ["Chipotle", "Panera", "Moe's", "Wawa", "McDonalds"]
     
     let foodNames : [String] = ["Burgers", "Pizza", "Pasta", "Asian", "Takeout"]

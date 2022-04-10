@@ -18,7 +18,12 @@
 		65FD272B27DB2387002A66AE /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD272A27DB2387002A66AE /* FoodViewController.swift */; };
 		71CB59F927F771FB00B866D4 /* foodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB59F827F771FB00B866D4 /* foodCell.swift */; };
 		BE4B220D27F76CEA00CAC4A2 /* hottestFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */; };
+		BE9AC3D32802045500E1EC2C /* loginUserUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9AC3D22802045500E1EC2C /* loginUserUI.swift */; };
 		BEB1ABF427C95C4200F43DC0 /* testingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */; };
+		BEBE3B4B2802664200DA8490 /* getStartedUserUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE3B4A2802664200DA8490 /* getStartedUserUI.swift */; };
+		BEBE3B4D28028C2600DA8490 /* UserLogin -w.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE3B4C28028C2600DA8490 /* UserLogin -w.swift */; };
+		BEBE3B4F2802B44A00DA8490 /* loginUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE3B4E2802B44A00DA8490 /* loginUserViewController.swift */; };
+		BEBE3B512802B4C500DA8490 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBE3B502802B4C500DA8490 /* testViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +40,12 @@
 		65FD272A27DB2387002A66AE /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		71CB59F827F771FB00B866D4 /* foodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodCell.swift; sourceTree = "<group>"; };
 		BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hottestFoodCell.swift; sourceTree = "<group>"; };
+		BE9AC3D22802045500E1EC2C /* loginUserUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginUserUI.swift; sourceTree = "<group>"; };
 		BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingSwift.swift; sourceTree = "<group>"; };
+		BEBE3B4A2802664200DA8490 /* getStartedUserUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getStartedUserUI.swift; sourceTree = "<group>"; };
+		BEBE3B4C28028C2600DA8490 /* UserLogin -w.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserLogin -w.swift"; sourceTree = "<group>"; };
+		BEBE3B4E2802B44A00DA8490 /* loginUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginUserViewController.swift; sourceTree = "<group>"; };
+		BEBE3B502802B4C500DA8490 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,11 @@
 				650038D327C9603500CA1547 /* Jithin.swift */,
 				BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */,
 				6561ED1227C95719006816AF /* Main.storyboard */,
+				BEBE3B502802B4C500DA8490 /* testViewController.swift */,
+				BEBE3B4E2802B44A00DA8490 /* loginUserViewController.swift */,
+				BE9AC3D22802045500E1EC2C /* loginUserUI.swift */,
+				BEBE3B4C28028C2600DA8490 /* UserLogin -w.swift */,
+				BEBE3B4A2802664200DA8490 /* getStartedUserUI.swift */,
 				BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */,
 				6561ED1527C9571A006816AF /* Assets.xcassets */,
 				6561ED1727C9571A006816AF /* LaunchScreen.storyboard */,
@@ -157,13 +172,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				65CC6C6E27D1F5AD00DFC536 /* Food.swift in Sources */,
+				BEBE3B4D28028C2600DA8490 /* UserLogin -w.swift in Sources */,
+				BEBE3B512802B4C500DA8490 /* testViewController.swift in Sources */,
 				65FD272B27DB2387002A66AE /* FoodViewController.swift in Sources */,
+				BE9AC3D32802045500E1EC2C /* loginUserUI.swift in Sources */,
 				BEB1ABF427C95C4200F43DC0 /* testingSwift.swift in Sources */,
 				650038D427C9603500CA1547 /* Jithin.swift in Sources */,
 				6561ED1127C95719006816AF /* ViewController.swift in Sources */,
 				BE4B220D27F76CEA00CAC4A2 /* hottestFoodCell.swift in Sources */,
 				71CB59F927F771FB00B866D4 /* foodCell.swift in Sources */,
 				6561ED0D27C95719006816AF /* AppDelegate.swift in Sources */,
+				BEBE3B4B2802664200DA8490 /* getStartedUserUI.swift in Sources */,
+				BEBE3B4F2802B44A00DA8490 /* loginUserViewController.swift in Sources */,
 				6561ED0F27C95719006816AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
