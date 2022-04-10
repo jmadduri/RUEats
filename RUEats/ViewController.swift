@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     // Size has to be non-automatic 
     @IBOutlet weak var foodCollectionView: UICollectionView!
     
-    @IBOutlet weak var testUIButton: UIButton!
     
     
     

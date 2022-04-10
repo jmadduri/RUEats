@@ -6,10 +6,19 @@
 //
 
 import UIKit
+import SwiftUI
 
 class testViewController: UIViewController {
 
     @IBAction func TestLoginUIButton(_ sender: Any) {
+    }
+    
+    @IBAction func whateverButton(_ sender: Any) {
+    }
+    
+    @IBSegueAction func showLoginDetailsSegue(_ coder: NSCoder) -> UIViewController? {
+        let loginUser = loginUserUI()
+        return UIHostingController(coder: coder, rootView: loginUser)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
