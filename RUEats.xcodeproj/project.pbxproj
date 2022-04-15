@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		650038D427C9603500CA1547 /* Jithin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650038D327C9603500CA1547 /* Jithin.swift */; };
+		6542F9DD27FFFD6600DEFA13 /* FoodDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6542F9DC27FFFD6600DEFA13 /* FoodDetail.storyboard */; };
+		6542F9DF280003BB00DEFA13 /* foodDetailViewController-J.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6542F9DE280003BB00DEFA13 /* foodDetailViewController-J.swift */; };
 		6561ED0D27C95719006816AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561ED0C27C95719006816AF /* AppDelegate.swift */; };
 		6561ED0F27C95719006816AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561ED0E27C95719006816AF /* SceneDelegate.swift */; };
 		6561ED1127C95719006816AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561ED1027C95719006816AF /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		650038D327C9603500CA1547 /* Jithin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jithin.swift; sourceTree = "<group>"; };
+		6542F9DC27FFFD6600DEFA13 /* FoodDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FoodDetail.storyboard; sourceTree = "<group>"; };
+		6542F9DE280003BB00DEFA13 /* foodDetailViewController-J.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "foodDetailViewController-J.swift"; sourceTree = "<group>"; };
 		6561ED0927C95719006816AF /* RUEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RUEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6561ED0C27C95719006816AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6561ED0E27C95719006816AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				650038D327C9603500CA1547 /* Jithin.swift */,
 				BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */,
 				6561ED1227C95719006816AF /* Main.storyboard */,
+				6542F9DC27FFFD6600DEFA13 /* FoodDetail.storyboard */,
+				6542F9DE280003BB00DEFA13 /* foodDetailViewController-J.swift */,
 				BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */,
 				6561ED1527C9571A006816AF /* Assets.xcassets */,
 				6561ED1727C9571A006816AF /* LaunchScreen.storyboard */,
@@ -146,6 +152,7 @@
 				6561ED1927C9571A006816AF /* LaunchScreen.storyboard in Resources */,
 				6561ED1627C9571A006816AF /* Assets.xcassets in Resources */,
 				6561ED1427C95719006816AF /* Main.storyboard in Resources */,
+				6542F9DD27FFFD6600DEFA13 /* FoodDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +169,7 @@
 				650038D427C9603500CA1547 /* Jithin.swift in Sources */,
 				6561ED1127C95719006816AF /* ViewController.swift in Sources */,
 				BE4B220D27F76CEA00CAC4A2 /* hottestFoodCell.swift in Sources */,
+				6542F9DF280003BB00DEFA13 /* foodDetailViewController-J.swift in Sources */,
 				71CB59F927F771FB00B866D4 /* foodCell.swift in Sources */,
 				6561ED0D27C95719006816AF /* AppDelegate.swift in Sources */,
 				6561ED0F27C95719006816AF /* SceneDelegate.swift in Sources */,
