@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Food View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AddFoodViewController" customModule="RUEats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUa-wi-5lC">
+                                <rect key="frame" x="138" y="64" width="138" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tq5-4V-IUs">
+                                <rect key="frame" x="182" y="806" width="50" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add"/>
+                                <connections>
+                                    <action selector="didTapAddButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9CU-go-WVS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Food Name Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gKs-hA-Obn">
+                                <rect key="frame" x="107" y="151" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bh0-Uw-5a6"/>
+                                    <constraint firstAttribute="height" constant="34" id="d7r-1A-lqs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Food Rating Here (x/5)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMN-eX-2kr">
+                                <rect key="frame" x="138" y="717" width="138" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="LZa-iE-wVa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="New Food Description Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UN9-u6-PNa">
+                                <rect key="frame" x="20" y="224" width="374" height="453"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="453" id="hlI-Ck-J2k"/>
+                                    <constraint firstAttribute="width" constant="374" id="sJQ-og-0jE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AMN-eX-2kr" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3Gt-uB-8Al"/>
+                            <constraint firstItem="UN9-u6-PNa" firstAttribute="top" secondItem="gKs-hA-Obn" secondAttribute="bottom" constant="39" id="4Kh-8X-cWm"/>
+                            <constraint firstItem="UN9-u6-PNa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6ZC-sd-0Ku"/>
+                            <constraint firstItem="AUa-wi-5lC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="GLW-G3-e5M"/>
+                            <constraint firstItem="gKs-hA-Obn" firstAttribute="top" secondItem="AUa-wi-5lC" secondAttribute="bottom" constant="47" id="NnX-EC-9nv"/>
+                            <constraint firstItem="gKs-hA-Obn" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="WCN-x1-9r2"/>
+                            <constraint firstItem="tq5-4V-IUs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gxD-c4-OMe"/>
+                            <constraint firstItem="tq5-4V-IUs" firstAttribute="top" secondItem="AMN-eX-2kr" secondAttribute="bottom" constant="55" id="ijJ-ri-X8t"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UN9-u6-PNa" secondAttribute="trailing" constant="20" id="jot-Vd-5p4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tq5-4V-IUs" secondAttribute="bottom" constant="25" id="pBW-SU-NhH"/>
+                            <constraint firstItem="AMN-eX-2kr" firstAttribute="top" secondItem="UN9-u6-PNa" secondAttribute="bottom" constant="40" id="ps2-dg-Jhb"/>
+                            <constraint firstItem="AUa-wi-5lC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="spy-oz-kwv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newFoodDescriptionTextField" destination="UN9-u6-PNa" id="Hxe-ra-N9H"/>
+                        <outlet property="newFoodRatingTextField" destination="AMN-eX-2kr" id="sjm-Y7-tEo"/>
+                        <outlet property="newFoodTextField" destination="gKs-hA-Obn" id="Ioq-2I-2d8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
