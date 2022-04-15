@@ -9,17 +9,34 @@ import UIKit
 
 class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource{
 
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var foodImagesCollectionView: UICollectionView!
     @IBOutlet weak var foodReviewsTableView: UITableView!
     @IBOutlet weak var foodImagesCollectionViewImage: UIImageView!
     @IBOutlet weak var restaurantNameLabel: UILabel!
     @IBOutlet weak var foodPriceLabel: UILabel!
     @IBOutlet weak var campusNameLabel: UILabel!
-    @IBOutlet weak var callButton: UIButton!
-    @IBOutlet weak var mapButton: UIButton!
     @IBOutlet weak var tableViewReviewLabel: UILabel!
     @IBOutlet weak var tableViewRatingLabel: UILabel!
+    
+    @IBAction func mapButton(_ sender: UIButton) {
+        //return the coordinates to take the view to the Apple Maps app
+    }
+    
+    @IBAction func backButton(_ sender: UIButton) {
+        //Take you back to the previous view
+    }
+    
+    @IBAction func callButton(_ sender: UIButton) {
+        callNumber(phoneNumber: "Enter Phone Number Here")
+    }
+    
+    private func callNumber(phoneNumber: String) {
+        guard let url = URL(string: "telprompt://\(phoneNumber)"),
+            UIApplication.shared.canOpenURL(url) else {
+            return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
     
     var reviews: [String] = ["Apple", "Banana", "Orange", "Pear", "Watermelon"]
     var ratings: [String] = ["5/5", "5/5", "5/5", "5/5", "5/5"]
