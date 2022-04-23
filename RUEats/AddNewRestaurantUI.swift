@@ -7,8 +7,6 @@
 import MapKit
 import SwiftUI
 
-
-
 struct AddNewRestaurantUI: View {
     @State var  RestaurantName = ""
     @State var  RestaurantState = ""

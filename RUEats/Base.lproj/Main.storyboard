@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cTJ-Kg-o8u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BuX-YR-n4K">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -115,52 +115,36 @@
             </objects>
             <point key="canvasLocation" x="338" y="135"/>
         </scene>
-        <!--Add Restaurant-->
-        <scene sceneID="gKB-3o-tQg">
+        <!--Tab Bar Controller-->
+        <scene sceneID="6tN-Y7-k3d">
             <objects>
-                <viewController id="c7G-Rs-JPF" customClass="AddRestaurantViewController" customModule="RUEats" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CIV-bu-WBz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVo-id-lKH">
-                                <rect key="frame" x="136" y="421" width="142" height="100"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Tap Me "/>
-                                <connections>
-                                    <segue destination="hpE-h5-CfX" kind="show" destinationCreationSelector="showDetails:" id="wYU-3w-CkU"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="OBx-UE-sCV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="HVo-id-lKH" firstAttribute="centerX" secondItem="CIV-bu-WBz" secondAttribute="centerX" id="1rT-51-QYp"/>
-                            <constraint firstItem="HVo-id-lKH" firstAttribute="centerY" secondItem="CIV-bu-WBz" secondAttribute="centerY" id="e3U-ko-F4v"/>
-                            <constraint firstItem="HVo-id-lKH" firstAttribute="leading" secondItem="OBx-UE-sCV" secondAttribute="leading" constant="150" id="mII-Z0-CKx"/>
-                            <constraint firstItem="OBx-UE-sCV" firstAttribute="trailing" secondItem="HVo-id-lKH" secondAttribute="trailing" constant="150" id="u5s-ty-brC"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Add Restaurant" id="4VH-xk-p2P"/>
+                <tabBarController id="BuX-YR-n4K" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gvd-TV-mWk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
                     <connections>
-                        <outlet property="addRestaurantButton" destination="HVo-id-lKH" id="Dlc-Mf-QYO"/>
+                        <segue destination="cTJ-Kg-o8u" kind="relationship" relationship="viewControllers" id="17b-RN-jWr"/>
+                        <segue destination="hpE-h5-CfX" kind="relationship" relationship="viewControllers" id="3Un-nz-esc"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BrW-qa-c1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qex-mC-ysq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="580" y="-614"/>
+            <point key="canvasLocation" x="-1610" y="135"/>
         </scene>
         <!--New Restaurant-->
         <scene sceneID="g7c-V1-zad">
             <objects>
-                <hostingController id="hpE-h5-CfX" sceneMemberID="viewController">
+                <hostingController id="hpE-h5-CfX" customClass="AddNewRestaurantVC" customModule="RUEats" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Add Restaurant" id="dmr-Rh-Tiy"/>
                     <navigationItem key="navigationItem" title="New Restaurant" id="hzc-cd-eha"/>
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8LC-Cy-nDU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1506" y="-614"/>
+            <point key="canvasLocation" x="-571" y="-560"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="6hw-dP-BaD">
             <objects>
                 <viewController id="cTJ-Kg-o8u" customClass="ViewController" customModule="RUEats" customModuleProvider="target" sceneMemberID="viewController">
@@ -169,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dkp-MH-ZOd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="178"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="129"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mtd-4t-lcG">
                                     <size key="itemSize" width="128" height="128"/>
@@ -179,7 +163,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hottestFoodCell" id="Pm2-1d-uQl" customClass="hottestFoodCell" customModule="RUEats" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="25" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.5" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="S1x-Ft-sGa" customClass="FoodCell" customModule="RUEats" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -214,7 +198,7 @@
                                 </cells>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WGb-UQ-1iT">
-                                <rect key="frame" x="0.0" y="282" width="414" height="580"/>
+                                <rect key="frame" x="0.0" y="233" width="414" height="580"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="restaurantProtypeCell" id="yG0-oM-SQr">
@@ -241,6 +225,7 @@
                             <constraint firstItem="2cC-g0-vHq" firstAttribute="bottom" secondItem="WGb-UQ-1iT" secondAttribute="bottom" id="zdN-p1-4q5"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="lce-xv-nZm"/>
                     <connections>
                         <outlet property="foodCollectionView" destination="dkp-MH-ZOd" id="GB3-ZM-Xxw"/>
                         <outlet property="restaurantTableView" destination="WGb-UQ-1iT" id="M9M-by-HLs"/>
@@ -249,24 +234,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cuh-bi-Vrs" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-570" y="135"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="HGf-yJ-8Z1">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Ym-My-a1V" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H2A-55-KpZ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="c7G-Rs-JPF" kind="relationship" relationship="rootViewController" id="7tS-EZ-CuW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="stS-8f-hHB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-357" y="-614"/>
         </scene>
     </scenes>
     <resources>

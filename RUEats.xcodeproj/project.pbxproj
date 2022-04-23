@@ -16,8 +16,8 @@
 		6561ED1927C9571A006816AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6561ED1727C9571A006816AF /* LaunchScreen.storyboard */; };
 		65CC6C6E27D1F5AD00DFC536 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC6C6D27D1F5AD00DFC536 /* Food.swift */; };
 		65FD272B27DB2387002A66AE /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD272A27DB2387002A66AE /* FoodViewController.swift */; };
+		710912142814730400C8529F /* AddNewRestaurantHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710912132814730400C8529F /* AddNewRestaurantHostingController.swift */; };
 		71CB59F927F771FB00B866D4 /* foodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB59F827F771FB00B866D4 /* foodCell.swift */; };
-		BE2F94B427FE63E6006D708C /* AddRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F94B327FE63E6006D708C /* AddRestaurantViewController.swift */; };
 		BE2F94B627FE6C4C006D708C /* AddNewRestaurantUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F94B527FE6C4C006D708C /* AddNewRestaurantUI.swift */; };
 		BE4B220D27F76CEA00CAC4A2 /* hottestFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */; };
 		BE9AC3D127FFF9EB00E1EC2C /* mapUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9AC3D027FFF9EB00E1EC2C /* mapUI.swift */; };
@@ -36,8 +36,8 @@
 		6561ED1A27C9571A006816AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65CC6C6D27D1F5AD00DFC536 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		65FD272A27DB2387002A66AE /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		710912132814730400C8529F /* AddNewRestaurantHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRestaurantHostingController.swift; sourceTree = "<group>"; };
 		71CB59F827F771FB00B866D4 /* foodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodCell.swift; sourceTree = "<group>"; };
-		BE2F94B327FE63E6006D708C /* AddRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewController.swift; sourceTree = "<group>"; };
 		BE2F94B527FE6C4C006D708C /* AddNewRestaurantUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRestaurantUI.swift; sourceTree = "<group>"; };
 		BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hottestFoodCell.swift; sourceTree = "<group>"; };
 		BE9AC3D027FFF9EB00E1EC2C /* mapUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapUI.swift; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 				BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */,
 				6561ED1227C95719006816AF /* Main.storyboard */,
 				BE9AC3D027FFF9EB00E1EC2C /* mapUI.swift */,
-				BE2F94B327FE63E6006D708C /* AddRestaurantViewController.swift */,
 				BE2F94B527FE6C4C006D708C /* AddNewRestaurantUI.swift */,
+				710912132814730400C8529F /* AddNewRestaurantHostingController.swift */,
 				BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */,
 				6561ED1527C9571A006816AF /* Assets.xcassets */,
 				6561ED1727C9571A006816AF /* LaunchScreen.storyboard */,
@@ -172,8 +172,8 @@
 				6561ED1127C95719006816AF /* ViewController.swift in Sources */,
 				BE4B220D27F76CEA00CAC4A2 /* hottestFoodCell.swift in Sources */,
 				71CB59F927F771FB00B866D4 /* foodCell.swift in Sources */,
-				BE2F94B427FE63E6006D708C /* AddRestaurantViewController.swift in Sources */,
 				6561ED0D27C95719006816AF /* AppDelegate.swift in Sources */,
+				710912142814730400C8529F /* AddNewRestaurantHostingController.swift in Sources */,
 				BE2F94B627FE6C4C006D708C /* AddNewRestaurantUI.swift in Sources */,
 				BE9AC3D127FFF9EB00E1EC2C /* mapUI.swift in Sources */,
 				6561ED0F27C95719006816AF /* SceneDelegate.swift in Sources */,
