@@ -227,14 +227,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obn-04-r9P">
-                                <rect key="frame" x="327" y="243" width="67" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Temp Button"/>
-                                <connections>
-                                    <segue destination="c7G-Rs-JPF" kind="show" id="1HH-xz-g3b"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2cC-g0-vHq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -242,12 +234,8 @@
                             <constraint firstItem="2cC-g0-vHq" firstAttribute="trailing" secondItem="WGb-UQ-1iT" secondAttribute="trailing" id="0RT-Is-0dp"/>
                             <constraint firstItem="dkp-MH-ZOd" firstAttribute="leading" secondItem="2cC-g0-vHq" secondAttribute="leading" id="43a-bz-Lzo"/>
                             <constraint firstItem="WGb-UQ-1iT" firstAttribute="leading" secondItem="2cC-g0-vHq" secondAttribute="leading" id="9Xh-aU-uSt"/>
-                            <constraint firstItem="WGb-UQ-1iT" firstAttribute="top" secondItem="obn-04-r9P" secondAttribute="bottom" constant="8" symbolic="YES" id="BEc-Fi-GlP"/>
-                            <constraint firstItem="obn-04-r9P" firstAttribute="leading" secondItem="2cC-g0-vHq" secondAttribute="leading" constant="327" id="EHf-ag-mPh"/>
                             <constraint firstItem="2cC-g0-vHq" firstAttribute="trailing" secondItem="dkp-MH-ZOd" secondAttribute="trailing" id="Ndb-Az-aas"/>
-                            <constraint firstItem="2cC-g0-vHq" firstAttribute="trailing" secondItem="obn-04-r9P" secondAttribute="trailing" constant="20" id="ZqL-3k-kE6"/>
                             <constraint firstItem="WGb-UQ-1iT" firstAttribute="top" secondItem="dkp-MH-ZOd" secondAttribute="bottom" constant="60" id="b49-sr-6cP"/>
-                            <constraint firstItem="obn-04-r9P" firstAttribute="top" secondItem="dkp-MH-ZOd" secondAttribute="bottom" constant="21" id="n3N-0p-wnf"/>
                             <constraint firstItem="2cC-g0-vHq" firstAttribute="bottom" secondItem="dkp-MH-ZOd" secondAttribute="bottom" constant="640" id="rxa-u4-Sfv"/>
                             <constraint firstItem="dkp-MH-ZOd" firstAttribute="top" secondItem="2cC-g0-vHq" secondAttribute="top" id="vwr-7a-ney"/>
                             <constraint firstItem="2cC-g0-vHq" firstAttribute="bottom" secondItem="WGb-UQ-1iT" secondAttribute="bottom" id="zdN-p1-4q5"/>
@@ -281,9 +269,6 @@
             <point key="canvasLocation" x="-357" y="-614"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="7tS-EZ-CuW"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="line.3.horizontal.decrease.circle.fill" catalog="system" width="128" height="121"/>
