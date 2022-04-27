@@ -7,27 +7,64 @@
 
 import UIKit
 
-class foodDetailViewController_J: UIViewController, //UITableViewDelegate, UITableViewDataSource,
+class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITableViewDataSource,
                                   UICollectionViewDelegate, UICollectionViewDataSource
 {
 
     @IBOutlet weak var foodImagesCollectionView: UICollectionView!
     @IBOutlet weak var foodReviewsTableView: UITableView!
-    @IBOutlet weak var restaurantNameLabel: UILabel!
-    @IBOutlet weak var foodPriceLabel: UILabel!
-    @IBOutlet weak var campusNameLabel: UILabel!
     
-    var reviews: [String] = ["Apple", "Banana", "Orange", "Pear", "Watermelon"]
+    var reviews: [String] = ["I thought the food was great!", "I thought the food was great!", "I thought the food was great!", "I thought the food was great!", "I thought the food was great!"]
     var ratings: [String] = ["5/5", "5/5", "5/5", "5/5", "5/5"]
-    var foodCellDict: [Character: [FoodDetail]] = [:]
+    var foodCellDict: [FoodDetail] = []
+    var reviewsDict: [Character:[String]] = [:]
+    var reviewCellDict: [Character: [Reviews]] = [:]
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        foodImagesCollectionView.delegate = self
+        foodImagesCollectionView.dataSource = self
+        
+        addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple")!))
+        addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple1")!))
+        addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple2")!))
+        addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple3")!))
+    
+        foodReviewsTableView.delegate = self
+        foodReviewsTableView.dataSource = self
+    }
+    
+    
+    func addCollectionFoodCell(insert food: FoodDetail){
+        foodCellDict.append(food)
+        foodImagesCollectionView.reloadData()
+    }
+    
+    func addReviewCell(insert food: Reviews){
+        let firstLetter: Character = food.review.first!
+        var currentList = (reviewCellDict[firstLetter] == nil) ? [] : reviewCellDict[firstLetter]!
+        currentList.append(food)
+        reviewCellDict[firstLetter] = currentList
+        foodReviewsTableView.reloadData()
+    }
+    
+    func sortReviews() {
+        for rating in ratings {
+            let firstLetter: Character = rating.first!
+            var currentList = (reviewsDict[firstLetter] == nil) ? [] : reviewsDict[firstLetter]!
+            currentList.append(rating)
+            reviewsDict[firstLetter] = currentList
+        }
+    }
     
     @IBAction func mapButton(_ sender: UIButton) {
-        //return the coordinates to take the view to the Apple Maps app
+        
     }
     
     @IBAction func backButton(_ sender: UIButton) {
-        //Take you back to the previous view
+        
     }
     
     @IBAction func callButton(_ sender: UIButton) {
@@ -42,40 +79,44 @@ class foodDetailViewController_J: UIViewController, //UITableViewDelegate, UITab
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
-    func addCollectionFoodCell(insert food: FoodDetail){
-        let firstLetter: Character = food.name.lowercased().first!
-        var currentList = (foodCellDict[firstLetter] == nil) ? [] : foodCellDict[firstLetter]!
-        currentList.append(food)
-        foodCellDict[firstLetter] = currentList
-        foodImagesCollectionView.reloadData()
+    func getFoodsAtSectionRow(section: Int, row: Int) -> String{
+        let letter = reviewsDict.keys.sorted()[section]
+        let list = reviewsDict[letter]!
+        return list[row]
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        foodImagesCollectionView.delegate = self
-        foodImagesCollectionView.dataSource = self
-        
-        //foodReviewsTableView.delegate = self
-        //foodReviewsTableView.dataSource = self
-        
-        
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "\(reviewCellDict.keys.sorted()[section])"
     }
-    /*
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return reviewCellDict.keys.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        let letter = reviewCellDict.keys.sorted()[section]
+        let list = reviewCellDict[letter]!
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = foodReviewsTableView.dequeueReusableCell(withIdentifier: "ReviewRatingTableViewCell_j", for: indexPath) as! ReviewRatingTableViewCell_j
+        let letter = reviewCellDict.keys.sorted()[indexPath.section]
+        let list = reviewCellDict[letter]!
+        let review = list[indexPath.row]
+        cell.setUpCell(review: review)
+        return cell
     }
-    */
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return foodCellDict.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell_j", for: indexPath) as! CollectionViewCell_j
+        let image = foodCellDict[indexPath.item]
+        cell.setUpCollectionViewCell(food: image)
+        return cell
     }
     /*
     // MARK: - Navigation
@@ -86,5 +127,4 @@ class foodDetailViewController_J: UIViewController, //UITableViewDelegate, UITab
         // Pass the selected object to the new view controller.
     }
     */
-
 }

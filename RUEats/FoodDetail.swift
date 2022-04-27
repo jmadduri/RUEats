@@ -9,9 +9,5 @@ import UIKit
 
 struct FoodDetail
 {
-    var name: String
-    var price: String
     var image: UIImage
-    var restaurant: String
-    var campus: String
 }
