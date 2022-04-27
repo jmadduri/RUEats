@@ -9,9 +9,8 @@ import UIKit
 
 class ReviewRatingTableViewCell_j: UITableViewCell {
     
-    @IBOutlet weak var reviews: UILabel!
-    @IBOutlet weak var ratings: UILabel!
-    
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var reviewLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,8 +22,8 @@ class ReviewRatingTableViewCell_j: UITableViewCell {
         // Configure the view for the selected state
     }
     func setUpCell(review: Reviews){
-        reviews.text = review.review
-        ratings.text = review.rating
+        reviewLabel.text = review.review
+        ratingLabel.text = review.rating
     }
 
 }

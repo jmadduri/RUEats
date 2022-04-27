@@ -13,6 +13,10 @@ class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITable
 
     @IBOutlet weak var foodImagesCollectionView: UICollectionView!
     @IBOutlet weak var foodReviewsTableView: UITableView!
+    @IBOutlet weak var foodNameLabel: UILabel!
+    @IBOutlet weak var foodPriceLabel: UILabel!
+    @IBOutlet weak var restaurantNameLabel: UILabel!
+    @IBOutlet weak var campusNameLabel: UILabel!
     
     var reviews: [String] = ["I thought the food was great!", "I thought the food was great!", "I thought the food was great!", "I thought the food was great!", "I thought the food was great!"]
     var ratings: [String] = ["5/5", "5/5", "5/5", "5/5", "5/5"]
