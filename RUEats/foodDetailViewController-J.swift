@@ -23,7 +23,7 @@ class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITable
     var foodCellDict: [FoodDetail] = []
     var reviewsDict: [Character:[String]] = [:]
     var reviewCellDict: [Character: [Reviews]] = [:]
-    
+    let cellScale: CGFloat = 0.6
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,18 @@ class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITable
         foodReviewsTableView.delegate = self
         foodReviewsTableView.dataSource = self
         
-        addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple")!))
+        /*
+        let screenSize = UIScreen.main.bounds.size
+        let cellWidth = floor(screenSize.width * cellScale)
+        let cellHeight = floor(screenSize.height * cellScale)
+        let insetX = (view.bounds.width - cellWidth) / 2.0
+        let insetY = (view.bounds.height - cellHeight) / 2.0
+        let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+        collectionView.contentInset = UIEdgeInsets(top: insetY, left: insetX, bottom: insetY, right: insetX)
+         */
+        
+        //addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple")!))
         addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple1")!))
         addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple2")!))
         addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple3")!))
