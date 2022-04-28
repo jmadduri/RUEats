@@ -77,6 +77,10 @@ class FoodViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "didTapFoodItemCell", sender: self)
+    }
+    
     func getFoodsAtSectionRow(section: Int, row: Int) -> String{
         let letter = foodsDict.keys.sorted()[section]
         let list = foodsDict[letter]!

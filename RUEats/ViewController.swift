@@ -57,6 +57,9 @@ extension ViewController: UITableViewDataSource{
         
         return cell
     }
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "didSelectRestaurant", sender: self)
+    }
 }
 
 extension ViewController: UICollectionViewDelegate{
