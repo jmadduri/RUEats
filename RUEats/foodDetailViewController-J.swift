@@ -19,7 +19,7 @@ class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var campusNameLabel: UILabel!
     
     var reviews: [String] = ["I thought the food was great!", "I thought the food was great!", "I thought the food was great!", "I thought the food was great!", "I thought the food was great!"]
-    var ratings: [String] = ["5/5", "5/5", "5/5", "5/5", "5/5"]
+    var ratings: [String] = ["5/5", "4/5", "3/5", "2/5", "1/5"]
     var foodCellDict: [FoodDetail] = []
     var reviewsDict: [Character:[String]] = [:]
     var reviewCellDict: [Character: [Reviews]] = [:]
@@ -30,14 +30,22 @@ class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITable
 
         foodImagesCollectionView.delegate = self
         foodImagesCollectionView.dataSource = self
+        foodReviewsTableView.delegate = self
+        foodReviewsTableView.dataSource = self
         
         addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple")!))
         addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple1")!))
         addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple2")!))
         addCollectionFoodCell(insert: FoodDetail(image: UIImage(named: "apple3")!))
-    
-        foodReviewsTableView.delegate = self
-        foodReviewsTableView.dataSource = self
+        
+        for i in stride(from: 0, to: reviews.count, by: 1) {
+            addReviewCell(insert: Reviews(review: reviews[i], rating: ratings[i]))
+        }
+        
+        foodNameLabel.text = "Apple"
+        foodPriceLabel.text = "$0.99"
+        restaurantNameLabel.text = "Apple Store"
+        campusNameLabel.text = "Livingston"
     }
     
     
@@ -47,7 +55,7 @@ class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITable
     }
     
     func addReviewCell(insert food: Reviews){
-        let firstLetter: Character = food.review.first!
+        let firstLetter: Character = food.rating.first!
         var currentList = (reviewCellDict[firstLetter] == nil) ? [] : reviewCellDict[firstLetter]!
         currentList.append(food)
         reviewCellDict[firstLetter] = currentList
@@ -112,13 +120,17 @@ class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITable
         return cell
     }
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return foodCellDict.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell_j", for: indexPath) as! CollectionViewCell_j
-        let image = foodCellDict[indexPath.item]
+        let image = foodCellDict[indexPath.row]
         cell.setUpCollectionViewCell(food: image)
         return cell
     }
@@ -131,4 +143,5 @@ class foodDetailViewController_J: UIViewController, UITableViewDelegate, UITable
         // Pass the selected object to the new view controller.
     }
     */
+    
 }
