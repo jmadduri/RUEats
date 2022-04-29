@@ -22,6 +22,8 @@
 		65FD272B27DB2387002A66AE /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD272A27DB2387002A66AE /* FoodViewController.swift */; };
 		710912142814730400C8529F /* AddNewRestaurantHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710912132814730400C8529F /* AddNewRestaurantHostingController.swift */; };
 		71821630281B2F5E001C496C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7182162F281B2F5E001C496C /* Main.storyboard */; };
+		71AEE89C281C5CFF007B8BB7 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE89B281C5CFF007B8BB7 /* CreateUserViewController.swift */; };
+		71AEE89E281C5D5D007B8BB7 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AEE89D281C5D5D007B8BB7 /* LoginPageViewController.swift */; };
 		71CB59F927F771FB00B866D4 /* foodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB59F827F771FB00B866D4 /* foodCell.swift */; };
 		BE2F94B627FE6C4C006D708C /* AddNewRestaurantUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2F94B527FE6C4C006D708C /* AddNewRestaurantUI.swift */; };
 		BE4B220D27F76CEA00CAC4A2 /* hottestFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */; };
@@ -47,6 +49,8 @@
 		65FD272A27DB2387002A66AE /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		710912132814730400C8529F /* AddNewRestaurantHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRestaurantHostingController.swift; sourceTree = "<group>"; };
 		7182162F281B2F5E001C496C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		71AEE89B281C5CFF007B8BB7 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		71AEE89D281C5D5D007B8BB7 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		71CB59F827F771FB00B866D4 /* foodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodCell.swift; sourceTree = "<group>"; };
 		BE2F94B527FE6C4C006D708C /* AddNewRestaurantUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRestaurantUI.swift; sourceTree = "<group>"; };
 		BE4B220C27F76CEA00CAC4A2 /* hottestFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hottestFoodCell.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				65FD272A27DB2387002A66AE /* FoodViewController.swift */,
 				656A3C462819E9590023F366 /* Reviews.swift */,
 				71CB59F827F771FB00B866D4 /* foodCell.swift */,
+				71AEE89D281C5D5D007B8BB7 /* LoginPageViewController.swift */,
+				71AEE89B281C5CFF007B8BB7 /* CreateUserViewController.swift */,
 				65CC6C6D27D1F5AD00DFC536 /* Food.swift */,
 				650038D327C9603500CA1547 /* Jithin.swift */,
 				BEB1ABF327C95C4200F43DC0 /* testingSwift.swift */,
@@ -185,6 +191,7 @@
 				6503BA8D2813997200F4A1E4 /* CollectionViewCell_j.swift in Sources */,
 				656A3C492819EA250023F366 /* ReviewRatingTableViewCell_j.swift in Sources */,
 				65FD272B27DB2387002A66AE /* FoodViewController.swift in Sources */,
+				71AEE89C281C5CFF007B8BB7 /* CreateUserViewController.swift in Sources */,
 				BEB1ABF427C95C4200F43DC0 /* testingSwift.swift in Sources */,
 				6575260D2814632E00C95C5E /* FoodDetail.swift in Sources */,
 				650038D427C9603500CA1547 /* Jithin.swift in Sources */,
@@ -193,6 +200,7 @@
 				6542F9DF280003BB00DEFA13 /* foodDetailViewController-J.swift in Sources */,
 				71CB59F927F771FB00B866D4 /* foodCell.swift in Sources */,
 				6561ED0D27C95719006816AF /* AppDelegate.swift in Sources */,
+				71AEE89E281C5D5D007B8BB7 /* LoginPageViewController.swift in Sources */,
 				710912142814730400C8529F /* AddNewRestaurantHostingController.swift in Sources */,
 				BE2F94B627FE6C4C006D708C /* AddNewRestaurantUI.swift in Sources */,
 				BE9AC3D127FFF9EB00E1EC2C /* mapUI.swift in Sources */,
